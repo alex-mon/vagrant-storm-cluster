@@ -4,7 +4,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Number of cluster nodes (excluding the storm master server)
-    cluster_size = 1
+    cluster_size = 2
     # Base ip to use, master will have a 0 appended and then each node will add its number to it (1,2,3,4...)
     base_ip = '192.168.0.1'
     boxCentOS7 = 'puppetlabs/centos-7.0-64-puppet-enterprise'
