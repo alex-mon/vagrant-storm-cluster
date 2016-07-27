@@ -31,7 +31,7 @@ In order to change the number of Supervisor nodes, you will need to edit the *Va
 Storm is installed in the path `/usr/lib/storm`, the logs can be found in `/var/log/storm` and the config in `/etc/storm` which is a link to `/usr/lib/storm/conf`
 
 To start/stop the storm services:
-- Nimbus (master node) `service storm-nimbus start`
-- UI (master node) `service storm-ui start`
-- Supervisor (worker nodes) `service storm-supervisor start`
-- Logviewer (worker nodes) `service storm-logviewer start`
+- Nimbus (master node) `service storm-nimbus start/stop/status`
+- UI (master node) `service storm-ui start start/stop/status`
+- Supervisor (worker nodes) `service storm-supervisor start start/stop/status`
+- Logviewer (worker nodes) `service storm-logviewer start start/stop/status`
