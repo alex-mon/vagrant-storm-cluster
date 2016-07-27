@@ -17,6 +17,7 @@ hosts::populate { 'add ips to hosts file':
 class {'storm':
   zookeeper_servers    => [ $master_fqdn ],
   install_from_tarball => true,
+  version              => "1.0.1",
 }
 
 class {'storm::nimbus':
