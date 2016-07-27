@@ -15,8 +15,7 @@ In order to change the number of Supervisor nodes, you will need to edit the *Va
   - **Supervisor nodes:**  
     - node-x.cluster       
     - 192.168.0.1x *Where "x" is the node number*
-  
-  
+
 # How to create the cluster using Vagrant and VirtualBox
 
 1. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads "VirtualBox Downloads")
@@ -28,4 +27,11 @@ In order to change the number of Supervisor nodes, you will need to edit the *Va
 7. To ssh into the nodes: `ssh node-x.cluster`
 8. To destroy the cluster use the command `vagrant destroy`
 
-  
+# Managing storm inside the cluster
+Storm is installed in the path `/usr/lib/storm`, the logs can be found in `/var/log/storm` and the config in `/etc/storm` which is a link to `/usr/lib/storm/conf`
+
+To start/stop the storm services:
+- Nimbus (master node) `service storm-nimbus start`
+- UI (master node) `service storm-ui start`
+- Supervisor (worker nodes) `service storm-supervisor start`
+- Logviewer (worker nodes) `service storm-logviewer start`
