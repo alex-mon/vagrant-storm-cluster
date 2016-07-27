@@ -4,7 +4,7 @@ This vagrant file will deploy a Storm cluster with a Nimbus node and up to 9 Sup
 
 By default, the Nimbus node will have 1GB of Ram and the Supervisor nodes will have 2Gb of ram and 2 executors
 
-In order to change the number of Supervisor nodes, you will need to edit the *VagrantFile* and change the parameter named `cluster_size`
+In order to change the number of Supervisor nodes, you will need to edit the *VagrantFile* and change the parameter named *cluster_size*
 
 >cluster_size = 1
 
